@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberGuard AI | Login</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#081229;
+overflow:hidden;
+
+}
+
+/* Animated Background */
+
+body::before{
+
+content:'';
+position:absolute;
+width:200%;
+height:200%;
+
+background:
+radial-gradient(circle,#0ea5e9 2px,transparent 2px);
+
+background-size:45px 45px;
+
+animation:move 18s linear infinite;
+opacity:.18;
+
+}
+
+@keyframes move{
+
+0%{
+transform:translate(0,0);
+}
+
+100%{
+transform:translate(-120px,-120px);
+}
+
+}
+
+.container{
+
+width:900px;
+height:520px;
+
+display:flex;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 0 45px rgba(0,255,255,.15);
+
+backdrop-filter:blur(15px);
+
+}
+
+/* Left */
+
+.left{
+
+width:50%;
+background:linear-gradient(160deg,#0f172a,#1e3a8a);
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+padding:40px;
+
+}
+
+.left h1{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.left p{
+
+text-align:center;
+line-height:28px;
+color:#cbd5e1;
+
+}
+
+.shield{
+
+font-size:95px;
+
+margin-bottom:25px;
+
+}
+
+/* Right */
+
+.right{
+
+width:50%;
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(25px);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.login-box{
+
+width:330px;
+
+}
+
+.login-box h2{
+
+color:white;
+
+margin-bottom:30px;
+
+text-align:center;
+
+}
+
+.input-box{
+
+margin-bottom:22px;
+
+}
+
+.input-box input{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+outline:none;
+
+border-radius:10px;
+
+background:#15203a;
+
+color:white;
+
+font-size:15px;
+
+}
+
+.input-box input::placeholder{
+
+color:#94a3b8;
+
+}
+
+.options{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:13px;
+
+margin-bottom:25px;
+
+color:#cbd5e1;
+
+}
+
+.options a{
+
+color:#38bdf8;
+
+text-decoration:none;
+
+}
+
+button{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+background:#0ea5e9;
+
+color:white;
+
+font-size:17px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+background:#0284c7;
+
+transform:scale(1.03);
+
+}
+
+.footer{
+
+margin-top:25px;
+
+text-align:center;
+
+color:#cbd5e1;
+
+font-size:13px;
+
+}
+
+.footer span{
+
+color:#38bdf8;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left">
+
+<div class="shield">🛡️</div>
+
+<h1>CyberGuard AI</h1>
+
+<p>
+
+AI-Based Cyber Security Threat Detection System
+
+<br><br>
+
+Real-Time Threat Analysis
+
+<br>
+
+Machine Learning Detection
+
+<br>
+
+Secure Network Monitoring
+
+</p>
+
+</div>
+
+<div class="right">
+
+<div class="login-box">
+
+<h2>Welcome Back</h2>
+
+<form method="post" action="/login">
+
+<div class="input-box">
+<input type="text" name="username" placeholder="Username" required>
+</div>
+
+<div class="input-box">
+<input type="password" name="password" placeholder="Password" required>
+</div>
+
+<div class="options">
+
+<label>
+
+
+
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button type="submit">
+
+LOGIN
+
+</button>
+
+</form>
+
+<div class="footer">
+
+Powered by <span>Artificial Intelligence</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

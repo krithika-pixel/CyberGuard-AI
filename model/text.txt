@@ -1,0 +1,37 @@
+Benign- Normal/ No malicious activity detected
+
+DDOs/ Dos- Denial of Service
+
+BruteForce- login with several possibilities of user
+example- admin123, admin 1234, admin679 etc..
+
+Portscan - HTTP ports and methods
+Attacker
+   ↓
+Port 21? ❌
+Port 22? ✅
+Port 23? ❌
+Port 80? ✅
+Port 443? ✅
+...
+
+Infiltration - means an attacker has gained access to a network/system and is attempting to operate inside it.
+example- 
+
+Think:
+
+Normal user
+     ↓
+Network
+     ↓
+Server
+
+versus:
+
+Attacker
+    ↓
+Breaks in
+    ↓
+Network
+    ↓
+Moves/operates inside

@@ -1,0 +1,13 @@
+n=int(input("enter a number: "))
+sum=0
+
+while(n>0):
+    ld=n%10
+    w= n%10
+
+    sum= sum+(ld*ld*ld)
+
+if sum==n:
+    print("armstrong number")
+else:   
+    print("not armstrong number")
